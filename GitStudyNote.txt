@@ -17,6 +17,11 @@ Useful command
 > git commit: the command to commit a file in the staging area. Sample: git commit
 > git commit -m "message" : commit with a comment. If verbs are in the comment, it is a best practice to keep it in present tense.
 > git log : check the commit history in the working directory.
+> git checkout + filename: the command we use to reverse out commit back to the previous version.
+
+> git remote add <the_name_of_the_remotet> <url_of_repository> : tell the local repository we have a online repository and we would like to push the commit to it. by convention, we name the remote origin: 
+> git -u <the_name_of_the_remotet> <branch>: Push the commit from local to the online repository. Sample: git -u origin master
+
 
 
 
@@ -66,6 +71,32 @@ Date:   Thu Jun 13 23:49:49 2024 +0900
 >>> commit 98f4977c1c9da47a620e92d5ea89e61296e8985d (HEAD -> main)
 
 This is the commit "hash", this is used to uniquely identify the commit.
+
+>>>>>>git checkout<<<<<<
+> this is the command we use to roll back to the previous commit.
+
+
+>>>>>>Remote Dipository<<<<<<
+>PUSH: this is the command we use to push the local repository to github.
+In the git hus repository, the url is provided.
+>>> Step 1: tell our local repository that we have created a online repository. 
+>>>>>>git remote add origin url.url.com<<<<<<
+>>> Step 2: Push the commits
+>>>>>>git push -u origin master<<<<<<
+
+
+>>>>>>Branches<<<<<<
+What is master branch
+>>> this is the default or the main branch of all the commits.
+
+Git allow us to create side branch.
+What we can do here is, we can keep working our master branch and committing in the main branch, in the same time, we can add and test new features in our side branch.
+We can also "Merge" master and side branches. so if we decide to add our new code to the master branch, we can just use a command to do so.
+
+
+>>>>>>Important notes<<<<<<
+When we modified the file, we need to make the file into staging area agin and commit it.
+
 
 
 
