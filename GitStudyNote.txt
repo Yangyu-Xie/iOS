@@ -13,6 +13,12 @@ Useful command
 > git init: create a repository in the working directory.
 > git  status: to check what files are in the staging area.
 > git add + file_name : the command to add the file to the staging area. / Sample: git add newFile.txt
+> git add . : the dot represent the whole directory, so this is used to add all the files in the working directory to  the stagin area.
+> git commit: the command to commit a file in the staging area. Sample: git commit
+> git commit -m "message" : commit with a comment. If verbs are in the comment, it is a best practice to keep it in present tense.
+> git log : check the commit history in the working directory.
+
+
 
 
 
@@ -43,6 +49,27 @@ this .git directory is hidden, we need to use ls -a to check it's existence.
 >>>>>>git add<<<<<<
 > after check the status of our working directory, we can choose which file we want to track
 >>> git add: the command to add the file to the staging area.
+
+>>>>>>git commit<<<<<<
+> now we can commit the change, this will commit all the files which is in staging area in our working directory.
+
+>>>>>>git log<<<<<<
+> check the commit history in the working directory
+
+yangyu.xie GitStudyNote % git log
+commit 98f4977c1c9da47a620e92d5ea89e61296e8985d (HEAD -> main)
+Author: Yangyu-Xie <xlyxieyang@outlook.jp>
+Date:   Thu Jun 13 23:49:49 2024 +0900
+
+	initial commit
+
+>>> commit 98f4977c1c9da47a620e92d5ea89e61296e8985d (HEAD -> main)
+
+This is the commit "hash", this is used to uniquely identify the commit.
+
+
+
+
 
 
 
