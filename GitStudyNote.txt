@@ -1,0 +1,48 @@
+Learning how to use Git:
+
+Useful command
+
+> cd + directory_name: Change Directory / Sample: cd ~/Desktop
+> mkdir + new_directory_name: make Directory / Sample: mkdir sample
+> ls : list all the directory and files
+> ls -a: List all the file including the hiden files
+> touch + file_name : create a file in the current directory / Sample: touch newFile.txt
+> open file_name : Open a file in the current directory / Sampple : open newFile.txt
+> vim file_name : open a file in the current directory using terminal for editing purpose / Sample vim newFile.txt
+
+> git init: create a repository in the working directory.
+> git  status: to check what files are in the staging area.
+> git add + file_name : the command to add the file to the staging area. / Sample: git add newFile.txt
+
+
+
+Command for Git
+
+>>>>>>git init<<<<<<
+
+> first we would want to create a local git repository to store the files
+>>>git init
+this is the command we are going to use.
+
+
+Execution Example: 
+yangyu.xi GitStudyNote % git init
+Initialized empty Git repository in /Users/yangyu.xie/Desktop/GitStudyNote/.git/
+
+This shows that I created a local repository in the directory: GitStudyNote
+make sure we use ls and cd command to change to the current directory, so that our repository will build in the correct place.
+
+this .git directory is hidden, we need to use ls -a to check it's existence.
+
+>>>>>>git status<<<<<<
+> Now we have the local repository, we can track the change in particular files
+>>> Staging areea: in order to track changes in a particular files, we need to put the target file into a staging araa.
+>>> Staging area is a intermidiate space, we can choose which file in our working directory we want to "Commit"
+>>> git status: the command to check what is in the staging area.
+
+>>>>>>git add<<<<<<
+> after check the status of our working directory, we can choose which file we want to track
+>>> git add: the command to add the file to the staging area.
+
+
+
