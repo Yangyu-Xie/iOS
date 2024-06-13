@@ -82,7 +82,16 @@ In the git hus repository, the url is provided.
 >>> Step 1: tell our local repository that we have created a online repository. 
 >>>>>>git remote add origin url.url.com<<<<<<
 >>> Step 2: Push the commits
->>>>>>git push -u origin master<<<<<<
+>>>>>>git push -u origin HEAD:master<<<<<<
+https://stackoverflow.com/questions/4181861/message-src-refspec-master-does-not-match-any-when-pushing-commits-in-git
+
+Following this stackOverflow procedure, "git push -u origin master" will fail. and give me an error saying 
+error: src refspec master does not match any
+This explicitly states that you want to push the local ref HEAD to the remote ref master
+
+https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed
+Also git hub stop accepting the account password for authentication, we need to follow the guide here to generate the access token and use token to execute push.
+
 
 
 >>>>>>Branches<<<<<<
